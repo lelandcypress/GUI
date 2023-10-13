@@ -6,13 +6,15 @@ import Search from './pages/Search';
 import
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Router>
-      <Search />
-      
-       </Router>
-
+      <Nav />
+      <Switch>  
+        <Route path="/search" Component={Search} />
+        <Route path="/dllog"  Component={Log} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 
