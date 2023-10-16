@@ -1,9 +1,12 @@
-import Nav from "./nav"
+import Navigate from "./nav"
+import Container from 'react-bootstrap/Container';
+
 function Header(){
     return(
         <>
-        <h1>Header</h1> 
-        <Nav />
+        <Container className='bg-info'>
+        <Navigate />
+        </Container>
         </>
     )
 }
