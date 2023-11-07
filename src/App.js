@@ -7,6 +7,7 @@ import Search from './pages/Search';
 import Navigate from './Components/nav';
 import Footer from './Components/footer';
 import { Container } from 'react-bootstrap';
+import Download from './pages/Download';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Navigate />
       <Routes>  
         <Route path="/search" Component={Search} />
+        <Route path="/dl"  Component={Download} />
         <Route path="/dllog"  Component={Log} />
       </Routes>
       <Footer />

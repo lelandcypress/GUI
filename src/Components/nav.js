@@ -11,6 +11,7 @@ function Navigate(){
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='me-auto'>
                 <Nav.Link href='/search'>Search</Nav.Link>
+                <Nav.Link href="/dl">Downloads</Nav.Link>
                 <Nav.Link href="/dllog">Log</Nav.Link>
             
              </Nav>

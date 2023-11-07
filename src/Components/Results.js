@@ -1,4 +1,4 @@
-import {ListGroup}  from "react-bootstrap";
+import {Button, ListGroup}  from "react-bootstrap";
 import { pretendResults } from "../Components/searchResults";
 import { useState, useEffect } from "react";
 
@@ -12,10 +12,14 @@ pretendResults().then((data)=> {setResults(data)})
 
 })
 
+const handleDownload = (results) =>{
+  window.open("DOWNLOAD STARTED")
+}
+
 return(
     <ListGroup>
     {results.map((result)=>(
-      <ListGroup.Item key={result.id}>{result.name}</ListGroup.Item>  
+      <ListGroup.Item key={result.id}>{result.name} <Button variant="success" onClick={handleDownload(results)}>Download</Button> </ListGroup.Item>  
     ))}
     </ListGroup>
 );
